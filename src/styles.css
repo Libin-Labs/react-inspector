@@ -1,0 +1,39 @@
+.lp-inspector {
+  --lp-inspector-key: #215fa6;
+  --lp-inspector-value: #34633e;
+  font:
+    14px/1.6 ui-monospace,
+    monospace;
+}
+.lp-inspector__rows {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+}
+.lp-inspector__row {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  overflow-wrap: anywhere;
+}
+.lp-inspector__key {
+  color: var(--lp-inspector-key);
+}
+.lp-inspector__value {
+  color: var(--lp-inspector-value);
+  white-space: pre-wrap;
+  min-width: 0;
+}
+.lp-inspector__spacer {
+  display: inline-block;
+  flex: 0 0 1.5rem;
+}
+.lp-inspector button {
+  flex-shrink: 0;
+  font: inherit;
+}
+.lp-inspector button:focus-visible,
+.lp-inspector input:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
